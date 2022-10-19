@@ -1,6 +1,18 @@
-{% block content %}
+
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
 <!--Form to request user's name-->
+<form action = "/addStudentOrganisation" method = "POST">
+    <label>Enter name: <input type="text" name = "reg_name"/></label>
+    <label>Enter organization:</label>
+        <select   name="org_name">
+          <option value="uncc">UNCC</option>
+          <option value="cpcc">CPCC</option>
+          <option value="UNC">UNC</option>
+          <option value="epic">EPIC</option>
+        </select>
+        <button type = "Submit" name="reg_button">Register</button>
+    </form>
+   
 
-{% endblock %}
+
